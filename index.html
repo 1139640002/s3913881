@@ -1,0 +1,82 @@
+<html> 
+    <head> 
+        <title>  
+            My first website. 
+        </title> 
+
+        <style>
+            h1,h2{
+                margin-top: 4rem;
+                text-align: center;
+                font-family: 'Quicksand', sans-serif;}
+            .row{
+                width:720px;
+                margin:10px auto 10px auto;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    </head> 
+
+    <body style="background-color: rgb(239, 240, 217)">  
+        <h1> 
+            Digital Design Project 2-Interactive Icons
+        <h1> 
+        
+        <h2>
+            Calm
+        </h2>
+
+        <div class="row">
+            <div class="image-container"><img id="rain" src="img/1.png" width="200"></div>
+            <div class="image-container"><img id="bed" src="img/2.png" width="200"></div>
+            <div class="image-container"><img id="dog" src="img/3.png" width="200"></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="flower" src="img/4.png" width="200"></div>
+            <div class="image-container"><img id="clock" src="img/5.png" width="200"></div>
+            <div class="image-container"><img id="hug" src="img/6.png" width="200"></div>
+        </div>
+        
+        <div class="row">
+            <div class="image-container"><img id="sun" src="img/7.png" width="200"></div>
+            <div class="image-container"><img id="book" src="img/8.png" width="200"></div>
+            <div class="image-container"><img id="light" src="img/9.png" width="200"></div>
+        </div>
+        
+        <script>
+         
+            var sound1 =new buzz.sound("sound/1.mp3");
+            var sound2 =new buzz.sound("sound/2.mp3");
+            var sound3 =new buzz.sound("sound/3.mp3");
+            var sound4 =new buzz.sound("sound/4.mp3");
+            var sound5 =new buzz.sound("sound/5.mp3");
+            var sound6 =new buzz.sound("sound/6.mp3");
+            var sound7 =new buzz.sound("sound/7.mp3");
+            var sound8 =new buzz.sound("sound/8.mp3");
+            var sound9 =new buzz.sound("sound/9.mp3");
+            
+            window.onload = function(){
+                document.getElementById('rain').addEventListener('click',function () {sound1.play();});
+                document.getElementById('bed').addEventListener('click',function () {sound2.play();});
+                document.getElementById('dog').addEventListener('click',function () {sound3.play();});
+                document.getElementById('flower').addEventListener('click',function () {sound4.play();});
+                document.getElementById('clock').addEventListener('click',function () {sound5.play();});
+                document.getElementById('hug').addEventListener('click',function () {sound6.play();});
+                document.getElementById('sun').addEventListener('click',function () {sound7.play();});
+                document.getElementById('book').addEventListener('click',function () {sound8.play();});
+                document.getElementById('light').addEventListener('click',function () {sound9.play();});
+            }
+    
+        </script>
+
+    </body> 
+</html>
